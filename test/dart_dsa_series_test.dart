@@ -1,4 +1,4 @@
-import 'package:dart_dsa_series/dart_dsa_series.dart';
+import 'package:dart_dsa_series/basic_computation/basic_problems.dart';
 import 'package:test/test.dart';
 
 void main() {

@@ -1,5 +1,11 @@
-import 'package:dart_dsa_series/dart_dsa_series.dart' as dart_dsa_series;
+import 'package:dart_dsa_series/basic_computation/basic_problems.dart' as basic_problems;
+
 
 void main(List<String> arguments) {
-  print('Hello world: ${dart_dsa_series.calculate()}!');
+  print('Hello world: ${basic_problems.calculate()}!');
+  print('Remove Duplicates: ${basic_problems.removeDuplicates('anantha')}');
+  print('Substring of a String: ${basic_problems.subStrings('abc')}');
+
 }
+
+
