@@ -6,6 +6,11 @@ void main(List<String> arguments) {
   print('Remove Duplicates: ${basic_problems.removeDuplicates('anantha')}');
   print('Substring of a String: ${basic_problems.subStrings('abc')}');
 
+  print('Anagram: ${basic_problems.checkAnagram('silent', 'lis ten')}');
+
+  basic_problems.countVowelsAndConsonants('This is a sentence');
+
+
 }
 
 
