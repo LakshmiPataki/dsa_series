@@ -1,4 +1,4 @@
-import 'package:dart_dsa_series/basic_computation/basic_problems.dart';
+import 'package:dart_dsa_series/basic_computation/string_manipulation/string_manipulation.dart';
 import 'package:test/test.dart';
 
 void main() {

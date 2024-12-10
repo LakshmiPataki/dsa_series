@@ -41,24 +41,45 @@ bool checkAnagram(String str1, String str2) {
 }
 
 /// Write a function to count the number of vowels and consonants in a given string.
-void countVowelsAndConsonants(String inputString){
-  List<String> inputListString = inputString.replaceAll(" ", "").toLowerCase().split('');
-  List<String> vowels = ['a','e','i','o','u'];
+void countVowelsAndConsonants(String inputString) {
+  List<String> inputListString =
+      inputString.replaceAll(" ", "").toLowerCase().split('');
+  List<String> vowels = ['a', 'e', 'i', 'o', 'u'];
   Map<String, int> count = {};
   int vowelsCount = 0;
   int consonantsCount = 0;
-  for(var v in inputListString){
-    if(vowels.contains(v)){
+  for (var v in inputListString) {
+    if (vowels.contains(v)) {
       vowelsCount++;
-    }else {
+    } else {
       consonantsCount++;
     }
   }
   print('The number of vowels in this sentence is $vowelsCount');
   print('The number of Consonants in this sentence is $consonantsCount');
-
 }
 
-/// Write a function to calculate the sum of all even numbers in a list of integers.
+
+
 /// Write a function to count the occurrences of each character in a given string.
+Map<String, int> countOccurrences(String inputString) {
+  Map<String, int> mapOfOccurrences = {};
+  List<String> inputList =
+      inputString.replaceAll(" ", "").toLowerCase().split('');
+  for (var count in inputList) {
+    mapOfOccurrences[count] = (mapOfOccurrences[count] ?? 0) + 1;
+  }
+  return mapOfOccurrences;
+}
+
 /// Write a function to print the first n terms of the Fibonacci sequence.
+/// write a function to reverse a String
+String reverseString(String inputString) {
+  List<String> reversedStringList = [];
+
+  for (int i = inputString.length - 1; i >= 0; i--) {
+    reversedStringList.add(inputString[i]);
+  }
+  String revString = reversedStringList.join();
+  return revString;
+}
