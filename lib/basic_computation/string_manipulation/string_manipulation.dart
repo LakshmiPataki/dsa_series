@@ -45,7 +45,6 @@ void countVowelsAndConsonants(String inputString) {
   List<String> inputListString =
       inputString.replaceAll(" ", "").toLowerCase().split('');
   List<String> vowels = ['a', 'e', 'i', 'o', 'u'];
-  Map<String, int> count = {};
   int vowelsCount = 0;
   int consonantsCount = 0;
   for (var v in inputListString) {
@@ -58,8 +57,6 @@ void countVowelsAndConsonants(String inputString) {
   print('The number of vowels in this sentence is $vowelsCount');
   print('The number of Consonants in this sentence is $consonantsCount');
 }
-
-
 
 /// Write a function to count the occurrences of each character in a given string.
 Map<String, int> countOccurrences(String inputString) {
@@ -82,4 +79,31 @@ String reverseString(String inputString) {
   }
   String revString = reversedStringList.join();
   return revString;
+}
+
+/// write a program to convert string into a title case (first character of each word should be capital)
+String capitalizeLetter(String inputString) {
+  List<String> inputStringList = inputString.split(' ');
+  List<String> capitalizeStringList = [];
+  for (var input in inputStringList) {
+    capitalizeStringList
+        .add(input[0].toUpperCase() + input.substring(1).toLowerCase());
+  }
+  return capitalizeStringList.join(" ");
+}
+
+/// Write a function to find the first character in a string that does not repeat.
+String firstNonRepeatingString(String inputString) {
+  Map<String, int> countCharacters = {};
+  String nonRepeatingString = '';
+  for (var n in inputString.split('')) {
+    countCharacters[n] = (countCharacters[n] ?? 0) + 1;
+  }
+
+  for (var char in countCharacters.entries) {
+    if (char.value == 1) {
+      return nonRepeatingString = char.key;
+    }
+  }
+  return nonRepeatingString;
 }

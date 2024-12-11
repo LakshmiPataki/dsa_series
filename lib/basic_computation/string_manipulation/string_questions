@@ -5,3 +5,5 @@ Q4. Write a function to count the number of vowels and consonants in a given str
 Q5. Write a function to count the occurrences of each character in a given string.
 Q6. Write a function to print the first n terms of the Fibonacci sequence.
 Q7. Write a function to reverse a String
+Q8. Convert String to Title case ( first character of each word should be capital)
+Q9. Write a function to find the first character in a string that does not repeat. 

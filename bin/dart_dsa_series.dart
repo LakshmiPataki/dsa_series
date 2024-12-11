@@ -15,4 +15,7 @@ void main(List<String> arguments) {
   print(
       'Count Occurrences: ${string_manipulation.countOccurrences('Count occurrences of this sentence')}');
   print('Reverse String: ${string_manipulation.reverseString('silent')}');
+  print('Capitalize Letter: ${string_manipulation.capitalizeLetter('dart is Fun')}');
+  print('First Non repeating character in a String ${string_manipulation.firstNonRepeatingString('swiss')}');
+
 }
