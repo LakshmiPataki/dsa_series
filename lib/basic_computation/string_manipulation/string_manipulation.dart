@@ -107,3 +107,6 @@ String firstNonRepeatingString(String inputString) {
   }
   return nonRepeatingString;
 }
+
+/// Rearrange the String based on their frequency of occurance. ex: input : 'tree' output: 'eert' or 'eetr'
+/// 
